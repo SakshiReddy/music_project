@@ -4,9 +4,10 @@ body {
     background-image:linear-gradient(60deg,#ffe8d9,#ffcdcc);
     align-items: center;
     
-  
+}
 
-
+p {
+    margin: 1.5vh ;
 }
 .initial{
     font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
@@ -15,23 +16,28 @@ body {
 
 .image {
     border: 2px solid black;
-    border-radius: 5px;
-    margin: 2vh;
+    border-radius: 20px;
+    margin: 0.5vh;
 
+}
+
+form {
+    margin-bottom: 1vh;
 }
 
 .image img {
     width : 220px;
     height: 220px;
+    border-radius: 20px;
 }
 
 .item {
-    margin:2vh 7vw;
+    margin: 1vh 7vw;
 
     display: flex;
     flex-direction: row;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: whitesmoke;
     font-size: 2vh;
     align-items: center;
@@ -40,11 +46,27 @@ body {
 
         
 h2 {
-
+    margin : 0.5vh;
     color: #0091ae;
     font-size: 4vh;
 
 }
 
+h3 {
+    margin : 0.5vh;
+}
 
+.button {
+    background-color: #e7e7e7;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.5vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-style: normal;
+}
 

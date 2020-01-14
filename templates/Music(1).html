@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>MUSIC TO MATCH YOUR CURRENT LIFE SITUATION</title>
+</head>
+<link rel="stylesheet" href="static/Music.css">
+<body>
+<div class="initial">
+    <form method="POST" action={{url}}>
+    <p>Let us know how you feel today and we'll attempt to suggest songs that you'll relate to! </p>
+    <label><input type="text" name="query" style="font-size:3vh;height:5vh;width:40vw"></label>
+
+
+
+    <p>For example:<br>
+    I broke up with my girlfriend<br>
+    Work stress is getting to me
+    </p>
+
+    <button class="button" type="submit">SEARCH</button>
+
+    
+<h2>RESULTS :</h2>
+
+{% if results %}
+<form method="POST" action="">
+<div class="container1">
+    {% for song_name in results %}
+    <div class="item">
+
+        <div class="image">
+
+            <img src="static/{song_name}.jpg">
+        </div>
+
+        <div class="information">
+
+            <a href="https://www.youtube.com/watch?v=BtvJaNeELic"><h3>{{song_name}}</h3></a>
+            <label>How would you rate this song?</label>
+            <br>
+
+            <br><input type="image" src="star.jpg" alt="Submit" width="30" height="30">
+            <input type="image" src="star.jpg" alt="Submit" width="30" height="30">
+            <input type="image" src="star.jpg" alt="Submit" width="30" height="30">
+            <input type="image" src="star.jpg" alt="Submit" width="30" height="30">
+            <input type="image" src="star.jpg" alt="Submit" width="30" height="30">
+            <br><br>
+        </div>  
+
+     </div>
+     {% endfor %}
+
+</form>
+
+{% else %}
+    No results :(    
+{% endif %}
+
+</body>
+</html>

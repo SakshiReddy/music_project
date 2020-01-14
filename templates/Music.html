@@ -2,28 +2,29 @@
 <head>
     <title>MUSIC TO MATCH YOUR CURRENT LIFE SITUATION</title>
 </head>
-<link rel="stylesheet" href="static/Music.css">
+<link rel="stylesheet" href="Music.css">
 <body>
 <div class="initial">
-    <form action="{{url}}" >
+    <form  method="POST" action={{url}}>
     <p>Let us know how you feel today and we'll attempt to suggest songs that you'll relate to! </p>
     <label><input type="text" name="query" style="font-size:3vh;height:5vh;width:40vw"></label>
 
 
 
-    <p>For example:</p>
+    <p>For example:<br>
     I broke up with my girlfriend<br>
     Work stress is getting to me
-    <p>
+    </p>
 
-    <button type="submit">SEARCH</button>
-</form>
+
+    <button class="button" type="submit">SEARCH</button>
+    </form>
 </div>
 
 <h2>RESULTS :</h2>
 
 
-<form method="POST" action="">
+<form>
 <div class="container1">
 
     <div class="item">
@@ -35,10 +36,7 @@
 
         <div class="information">
 
-            <h3>Liability</h3>
-   
-            <a href="https://www.youtube.com/watch?v=BtvJaNeELic">https://www.youtube.com/watch?v=BtvJaNeELic</a>
-            <br>
+            <h3><a href="https://www.youtube.com/watch?v=BtvJaNeELic">Liability</a></h3>
             <br>
 
             <label>How would you rate this song?</label>
@@ -62,12 +60,11 @@
     
         <div class="information">
     
-            <h3>Lover</h3>
+            
        
-            <a href="https://www.youtube.com/watch?v=BtvJaNeELic">https://www.youtube.com/watch?v=BtvJaNeELic</a>
+            <a href="https://www.youtube.com/watch?v=BtvJaNeELic"><h3>Lover</h3></a>
             <br>
-            <br>
-    
+
             <label>How would you rate this song?</label>
             <br>
     
@@ -87,13 +84,10 @@
             </div>
         
             <div class="information">
-        
-                <h3>Fire</h3>
            
-                <a href="https://www.youtube.com/watch?v=BtvJaNeELic">https://www.youtube.com/watch?v=BtvJaNeELic</a>
+                <a href="https://www.youtube.com/watch?v=BtvJaNeELic"><h3>Fire</h3></a>
                 <br>
-                <br>
-        
+
                 <label>How would you rate this song?</label>
                 <br>
         
@@ -115,10 +109,9 @@
         
         <div class="information">
         
-                <h3>High Hopes</h3>
+                
            
-                <a href="https://www.youtube.com/watch?v=BtvJaNeELic">https://www.youtube.com/watch?v=BtvJaNeELic</a>
-                <br>
+                <a href="https://www.youtube.com/watch?v=BtvJaNeELic"><h3>High Hopes</h3></a>
                 <br>
         
                 <label>How would you rate this song?</label>
@@ -164,8 +157,5 @@
 </div>
 </form>
     
-
-
-</p>
 </body>
 </html>
